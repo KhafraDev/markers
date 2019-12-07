@@ -1,0 +1,28 @@
+{
+  "name": "markers",
+  "version": "1.0.0",
+  "description": "ANSI console styles and colored texts.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/colors.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khafradev/markers.git"
+  },
+  "keywords": [
+    "chalk",
+    "ansi",
+    "text",
+    "color"
+  ],
+  "author": "Khafra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khafradev/markers/issues"
+  },
+  "homepage": "https://github.com/khafradev/markers#readme"
+}
