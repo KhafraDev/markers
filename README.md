@@ -4,24 +4,26 @@ ANSI console styles and colored texts.
 # Browser support?
 * Not coming anytime soon, feel free to fork or submit a PR to add support.
 
-# Example
+# Class-Based Example
 ```js
-const Markers = require('markers');
+const Markers = require('markers/class');
 const M = new Markers();
 
 console.log(M.green.bgRed.underscore.bold.text('hello, world!'));
 console.log(M.yellow.underscore.bold.text('day'), 'and', M.black.bgWhite.text('night'));
 ```
-Styles can be stacked, if colors are stacked it will be overwritten with the last one.
-You can have multiple strings in one instance of ``Markers``.
+
+# Object-Based Example
+* This option is the default export.
+```js
+const Markers = require('markers');
+
+console.log(Markers.green.bgRed.underscore.bold.text('hello, world!'));
+console.log(Markers.yellow.underscore.bold.text('day'), 'and', Markers.black.bgWhite.text('night'));
+```
 
 # Benefits over x,y,z
 * No dependencies.
-* Easy to use and similar (simple) syntax.
-* +/- I wrote this in an hour.
-
-# License (MIT)
-View it [here](./LICENSE).
-
-# Tests
-Included [here](./test). Tests include styles, colors, and background colors.
+* Fast.
+* Uses Chalk-like "magic properties".
+* Class and Object based variants!

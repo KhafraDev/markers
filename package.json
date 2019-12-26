@@ -1,13 +1,11 @@
 {
   "name": "markers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ANSI console styles and colored texts.",
   "main": "src/index.js",
-  "directories": {
-    "test": "test"
-  },
+  "directories": {},
   "scripts": {
-    "test": "node test/colors.js"
+    "test": "node -e 'console.log(`no tests, sorry`);"
   },
   "repository": {
     "type": "git",
